@@ -30,6 +30,9 @@ function App() {
       필수 익스텐션
       <Greeting />
       <Card />
+      <Card />
+      <Card />
+      <Card />
     </div>
   );
 }
