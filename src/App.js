@@ -1,4 +1,6 @@
-import Greeting from "./Greeting";
+import Greeting from "./components/Greeting";
+import Welcome from "./components/Card";
+import Card from "./components/Card";
 
 function App() {
   // logic
@@ -27,9 +29,7 @@ function App() {
     <div className="App">
       필수 익스텐션
       <Greeting />
-      <Greeting />
-      <Greeting />
-      <Greeting />
+      <Card />
     </div>
   );
 }
