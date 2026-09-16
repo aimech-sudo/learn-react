@@ -1,27 +1,29 @@
-import React, { useState } from 'react'
+import React, { useState } from "react";
 
 const Greeting = () => {
   // logic
   // let username = "";
-  const [username, setUserName] = useState("")
+  const [username, setUserName] = useState("");
 
   const handleClick = () => {
     // 사용자 이름 텍스트 변경 로직
     // username = window.prompt("당신의 이름은 뭔가요?")
     // 수정할 값을 인자로 넣어서 state 업데이트
-    setUserName(window.prompt("당신 이름은?"))
-    
-  }
+    setUserName(window.prompt("당신 이름은?"));
+    console.log("🚀 ~ handleClick ~ username:", username);
+  };
 
   // view
+  console.log("🚀 ~ Greeting ~ username:", username);
   return (
-    <div style={{"backgroundColor": "pink", "padding": "10px"}}>
-      
+    <div style={{ backgroundColor: "pink", padding: "10px" }}>
       <p>안녕하세요, {username}님</p>
       <p>오늘도 좋은하루 보내세요😊</p>
-      <button type='button' onClick={handleClick}>입력</button>
+      <button type="button" onClick={handleClick}>
+        입력
+      </button>
     </div>
-  )
-}
+  );
+};
 
-export default Greeting
+export default Greeting;
